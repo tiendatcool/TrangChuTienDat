@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <!-- Font Awesome -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
+        <!-- SweetAlert2 -->
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/limontesweetalert2/7.2.0/sweetalert2.min.css/>"
+        />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.2.0/sweetalert2.all.min.js"></script>
+        
+        
+        <link rel="stylesheet" href="login.css" />
+    </head>
+    <body>
+        <div class="loading" id="loading" >
+            <img src="https://i.gifer.com/ZKZg.gif" alt="loading">
+        </div>
+        <div class="container">
+            <div class="header">
+                <div class="header__icon">
+                    <i class="fas fa-users"></i>
+                </div>
+                <div class="header__title">
+                    <h2>User Login</h2>
+                </div>
+            </div>
+            <form
+                action=""
+                class="form"
+                onsubmit="onSubmitForm(this);
+                return false;"
+            >
+                <div class="form__username">
+                    <div class="form__username--icon form__icon">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="form__username--input form__input">
+                        <input
+                            type="text"
+                            id="username"
+                            placeholder="Username"
+                            name="username"
+                        />
+                    </div>
+                </div>
+                <p id="errorUsername"></p>
+                <div class="form__password">
+                    <div class="form__password--icon form__icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <div class="form__password--input form__input">
+                        <input
+                            type="password"
+                            id="password"
+                            placeholder="Password"
+                            name="password"
+                        />
+                        <span class="fas fa-eye" id="togglePassword"></span>
+                    </div>
+                </div>
+                <p id="errorPassword"></p>
+                <div class="form__submit">
+                    <button type="submit">
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+
+        <script src="js.js"></script>
+    </body>
+</html>
